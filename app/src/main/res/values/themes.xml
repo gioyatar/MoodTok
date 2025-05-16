@@ -3,7 +3,7 @@
     <style name="Theme.AppCompat.DevilHunter" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="backgroundColor">@color/bloodRed</item>
         <item name="textFillColor">@color/ashWhite</item>
-        <item name="fontFamily">@font/mael</item>
+        <item name="android:fontFamily">@font/mael</item>
         <item name="colorPrimary">@color/obsidianBlack</item>
     </style>
 
@@ -11,7 +11,7 @@
     <style name="Theme.AppCompat.DarkSlayer" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="backgroundColor">@color/deepMidnightBlue</item>
         <item name="textFillColor">@color/platinumGray</item>
-        <item name="fontFamily">@font/dmc</item>
+        <item name="android:fontFamily">@font/dmc</item>
         <item name="colorPrimary">@color/gunmetalGray</item>
     </style>
 
