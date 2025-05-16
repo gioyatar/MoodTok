@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Month and Year Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/prevMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"
+            android:background="@android:color/transparent"
+            android:contentDescription="Previous Month" />
+
+        <TextView
+            android:id="@+id/monthYearText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="May 2025"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/nextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_forward"
+            android:background="@android:color/transparent"
+            android:contentDescription="Next Month" />
+    </LinearLayout>
+
+    <!-- Day Labels -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView android:text="SUN" style="@style/DayLabel"/>
+        <TextView android:text="MON" style="@style/DayLabel"/>
+        <TextView android:text="TUE" style="@style/DayLabel"/>
+        <TextView android:text="WED" style="@style/DayLabel"/>
+        <TextView android:text="THU" style="@style/DayLabel"/>
+        <TextView android:text="FRI" style="@style/DayLabel"/>
+        <TextView android:text="SAT" style="@style/DayLabel"/>
+    </LinearLayout>
+
+    <!-- Calendar Grid using GridLayout -->
+    <GridLayout
+        android:id="@+id/calendarGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="6"
+        android:orientation="horizontal"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true" />
+
+</LinearLayout>

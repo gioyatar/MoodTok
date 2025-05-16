@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Devil Hunter Colors Theme -->
+    <color name="bloodRed">#8B0000</color>
+    <color name="obsidianBlack">#1A1A1A</color>
+    <color name="steelGray">#3C3C3C</color>
+    <color name="ashWhite">#CCCCCC</color>
+
+    <!-- Dark Slayer Colors Theme -->
+    <color name="deepMidnightBlue">#1A237E</color> <!-- A deep, dark blue to represent Vergil's regal yet cold demeanor -->
+    <color name="gunmetalGray">#2A3439</color> <!-- A very dark, muted gray, representing Vergil’s refined yet intimidating nature -->
+    <color name="darkSlateGray">#2F4F4F</color> <!-- A dark gray with a slight bluish tint for a cold, sharp vibe -->
+    <color name="platinumGray">#B0B0B0</color> <!-- A subtle, muted silver-gray that doesn't overpower the design -->
+</resources>
