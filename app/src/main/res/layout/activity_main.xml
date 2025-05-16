@@ -6,13 +6,6 @@
     android:layout_height="match_parent"
     android:background="?attr/backgroundColor">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DASHBOARD"
-        android:textColor="?attr/textFillColor"
-        android:textStyle="bold"/>
-
     <!-- Include the calendar layout -->
     <include
         layout="@layout/calendar_format"
