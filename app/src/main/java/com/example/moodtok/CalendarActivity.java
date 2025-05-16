@@ -1,11 +1,13 @@
 package com.example.moodtok;
 
 import android.graphics.Color;
+import android.graphics.Typeface;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
+import androidx.core.content.res.ResourcesCompat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -60,12 +62,30 @@ public class CalendarActivity {
         int totalCells = 42;
         int day = 1;
 
+        // **Start here: Resolve the fontFamily attribute once**
+        TypedValue typedValue = new TypedValue();
+        boolean found = calendarGrid.getContext().getTheme().resolveAttribute(android.R.attr.fontFamily, typedValue, true);
+
+        Typeface customFont = null;
+        if (found) {
+            int fontResId = typedValue.resourceId;
+            if (fontResId != 0) {
+                customFont = ResourcesCompat.getFont(calendarGrid.getContext(), fontResId);
+            }
+        }
+        // **End font resolving**
+
+        // Then the loop creating the day cells
         for (int i = 0; i < totalCells; i++) {
             TextView dayCell = new TextView(calendarGrid.getContext());
             dayCell.setGravity(Gravity.CENTER);
             dayCell.setTextSize(16);
             dayCell.setTextColor(Color.BLACK);
             dayCell.setPadding(0, 32, 0, 32);
+
+            if (customFont != null) {
+                dayCell.setTypeface(customFont);
+            }
 
             if (i >= offset && day <= daysInMonth) {
                 dayCell.setText(String.valueOf(day));
