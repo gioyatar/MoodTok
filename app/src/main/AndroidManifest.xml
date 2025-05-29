@@ -39,6 +39,15 @@
         <activity
             android:name=".ToDoPageEditActivity"
             android:exported="false" />
+
+        <!-- Diary -->
+        <activity
+            android:name=".DiaryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DiaryEntryActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
