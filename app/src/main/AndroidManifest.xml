@@ -24,7 +24,7 @@
 
         <!-- Calendar -->
         <activity
-            android:name=".CalendarActivity"
+            android:name=".CalendarComponent"
             android:exported="false" />
 
         <!-- To Do -->
@@ -36,6 +36,9 @@
             android:name=".ToDoPageActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ToDoPageEditActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

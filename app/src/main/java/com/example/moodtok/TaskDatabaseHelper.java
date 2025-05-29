@@ -49,6 +49,17 @@ public class TaskDatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    public void updateTask(Task task) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COL_TITLE, task.getTitle());
+        values.put(COL_DESC, task.getDescription());
+        values.put(COL_DEADLINE, task.getDeadline());
+
+        db.update(TABLE_NAME, values, COL_ID + "=?", new String[]{String.valueOf(task.getId())});
+        db.close();
+    }
+
     public ArrayList<Task> getAllTasks() {
         ArrayList<Task> taskList = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();

@@ -142,6 +142,7 @@
             android:gravity="center">
 
             <ImageView
+                android:id="@+id/todo"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/assignment_logo" />

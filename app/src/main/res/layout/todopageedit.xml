@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ToDoPageActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Edit Task"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Task Title -->
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:inputType="textCapSentences"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Task Description -->
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Deadline Picker -->
+    <EditText
+        android:id="@+id/editTextDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Deadline"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Task" />
+
+</LinearLayout>
