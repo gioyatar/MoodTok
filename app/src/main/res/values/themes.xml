@@ -17,4 +17,9 @@
 
     <!-- Set the Default Theme to Devil Hunter -->
     <style name="Theme.MoodTok" parent="Theme.AppCompat.DarkSlayer" />
+  <!-- Base application theme. -->
+    <style name="Base.Theme.MoodTok" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
 </resources>
