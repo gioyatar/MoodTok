@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         todoImageView = findViewById(R.id.todo);
         diaryImageView = findViewById(R.id.diary);
         aboutImageView = findViewById(R.id.about);
-         = findViewById(R.id.setting)
+
 
         calendarComponent = new CalendarComponent(monthYearText, prevMonthBtn, nextMonthBtn, calendarGrid);
         findViewById(R.id.mood1).setOnClickListener(v ->
