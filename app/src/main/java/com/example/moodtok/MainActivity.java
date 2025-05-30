@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private CalendarComponent calendarComponent;
     private ImageView todoImageView;
-
+    private ImageView diaryImageView;;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,11 +27,33 @@ public class MainActivity extends AppCompatActivity {
         GridLayout calendarGrid = findViewById(R.id.calendarGrid);
 
         todoImageView = findViewById(R.id.todo);
+        diaryImageView = findViewById(R.id.diary);
 
         calendarComponent = new CalendarComponent(monthYearText, prevMonthBtn, nextMonthBtn, calendarGrid);
+        findViewById(R.id.mood1).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.better));
+
+        findViewById(R.id.mood2).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.happy));
+
+        findViewById(R.id.mood3).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.neutral));
+
+        findViewById(R.id.mood4).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.awful));
+
+        findViewById(R.id.mood5).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.sad));
+
         if (todoImageView != null) {
             todoImageView.setOnClickListener(v -> {
                 Intent intent = new Intent(MainActivity.this, ToDoActivity.class);
+                startActivity(intent);
+            });
+        }
+        if (diaryImageView != null) {
+            diaryImageView.setOnClickListener(v -> {
+                Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
                 startActivity(intent);
             });
         }

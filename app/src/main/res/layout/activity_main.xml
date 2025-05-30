@@ -32,7 +32,6 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
@@ -50,49 +49,54 @@
             android:weightSum="5">
 
             <ImageButton
+                android:id="@+id/mood1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
+                android:contentDescription="Mood 1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/better"
-                android:contentDescription="Mood 1" />
+                android:src="@drawable/better" />
 
             <ImageButton
+                android:id="@+id/mood2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
+                android:contentDescription="Mood 2"
                 android:scaleType="fitCenter"
-                android:src="@drawable/happy"
-                android:contentDescription="Mood 2" />
+                android:src="@drawable/happy" />
 
             <ImageButton
+                android:id="@+id/mood3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
+                android:contentDescription="Mood 3"
                 android:scaleType="fitCenter"
-                android:src="@drawable/neutral"
-                android:contentDescription="Mood 3" />
+                android:src="@drawable/neutral" />
 
             <ImageButton
+                android:id="@+id/mood4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
+                android:contentDescription="Mood 4"
                 android:scaleType="fitCenter"
-                android:src="@drawable/awful"
-                android:contentDescription="Mood 4" />
+                android:src="@drawable/awful" />
 
             <ImageButton
+                android:id="@+id/mood5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
+                android:contentDescription="Mood 5"
                 android:scaleType="fitCenter"
-                android:src="@drawable/sad"
-                android:contentDescription="Mood 5" />
+                android:src="@drawable/sad" />
         </LinearLayout>
     </LinearLayout>
 
@@ -116,19 +120,7 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/dashboard_logo" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <ImageView
+                android:id="@+id/diary"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/diary_logo" />
