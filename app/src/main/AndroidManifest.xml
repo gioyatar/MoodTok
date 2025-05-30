@@ -49,15 +49,9 @@
             android:name=".DiaryEntryActivity"
             android:exported="false" />
 
-        <!-- Settings -->
-        <activity
-            android:name=".SettingsActivity"
+        <activity android:name=".AboutActivity"
             android:exported="false" />
 
-        <!-- About -->
-        <activity
-            android:name=".AboutActivity"
-            android:exported="false" />
     </application>
 
 </manifest>
