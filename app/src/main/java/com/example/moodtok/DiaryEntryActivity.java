@@ -47,19 +47,19 @@ public class DiaryEntryActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 switch (position) {
                     case 0: // Good
-                        moodImage.setImageResource(R.drawable.better);
+                        moodImage.setImageResource(R.drawable.mood1);
                         break;
                     case 1: // Great
-                        moodImage.setImageResource(R.drawable.happy);
+                        moodImage.setImageResource(R.drawable.mood2);
                         break;
                     case 2: // Neutral
-                        moodImage.setImageResource(R.drawable.neutral);
+                        moodImage.setImageResource(R.drawable.mood3);
                         break;
                     case 3: // Awful
-                        moodImage.setImageResource(R.drawable.awful);
+                        moodImage.setImageResource(R.drawable.mood4);
                         break;
                     case 4: // Sad
-                        moodImage.setImageResource(R.drawable.sad);
+                        moodImage.setImageResource(R.drawable.mood5);
                         break;
                     default:
                         break;
