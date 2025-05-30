@@ -30,7 +30,8 @@
             android:text="May 2025"
             android:textSize="18sp"
             android:textColor="#000000"
-            android:gravity="center" />
+            android:gravity="center"
+            />
 
         <ImageButton
             android:id="@+id/nextMonth"
@@ -48,11 +49,11 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-        <TextView android:text="SUN" style="@style/DayLabel"/>
-        <TextView android:text="MON" style="@style/DayLabel"/>
-        <TextView android:text="TUE" style="@style/DayLabel"/>
-        <TextView android:text="WED" style="@style/DayLabel"/>
-        <TextView android:text="THU" style="@style/DayLabel"/>
+        <TextView android:text="SUN" style="@style/DayLabel" />
+        <TextView android:text="MON" style="@style/DayLabel" />
+        <TextView android:text="TUE" style="@style/DayLabel" />
+        <TextView android:text="WED" style="@style/DayLabel" />
+        <TextView android:text="THU" style="@style/DayLabel" />
         <TextView android:text="FRI" style="@style/DayLabel"/>
         <TextView android:text="SAT" style="@style/DayLabel"/>
     </LinearLayout>
