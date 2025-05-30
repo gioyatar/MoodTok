@@ -56,7 +56,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mood1" />
+                android:src="@drawable/better" />
 
             <ImageButton
                 android:id="@+id/mood2"
@@ -66,7 +66,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 2"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mood2" />
+                android:src="@drawable/happy" />
 
             <ImageButton
                 android:id="@+id/mood3"
@@ -76,7 +76,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 3"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mood3" />
+                android:src="@drawable/neutral" />
 
             <ImageButton
                 android:id="@+id/mood4"
@@ -86,7 +86,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 4"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mood4" />
+                android:src="@drawable/awful" />
 
             <ImageButton
                 android:id="@+id/mood5"
@@ -96,7 +96,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 5"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mood5" />
+                android:src="@drawable/sad" />
         </LinearLayout>
     </LinearLayout>
 
@@ -120,19 +120,7 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/dashboard_logo" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <ImageView
+                android:id="@+id/diary"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/diary_logo" />
@@ -160,9 +148,11 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:id="@+id/about"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:src="@drawable/account_logo" />
+
         </LinearLayout>
 
     </LinearLayout>

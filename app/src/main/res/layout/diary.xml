@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     android:background="@android:color/white"
     tools:context=".DiaryActivity">
 
@@ -16,7 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="16dp">
+        android:padding="16dp">
 
         <ImageButton
             android:id="@+id/btnDeleteImage"
@@ -71,16 +70,94 @@
             android:contentDescription="Add Diary Entry"
             android:layout_gravity="end"
             android:padding="8dp" />
-
     </LinearLayout>
 
+    <!-- Diary Entries -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/diaryRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:paddingTop="8dp"
         android:clipToPadding="false"
-        tools:listitem="@layout/diaryitem"/>
+        tools:listitem="@layout/diaryitem" />
 
+    <!-- Bottom Nav Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#1A1A1A"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center">
+
+        <!-- Dashboard -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/dashboard"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/dashboard_logo" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Dashboard"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Diary -->
+
+        <!-- To-Do -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/todo"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/assignment_logo" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="To-Do"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- About -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/about"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/account_logo" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="About"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

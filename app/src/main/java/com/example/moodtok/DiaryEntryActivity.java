@@ -87,6 +87,9 @@ public class DiaryEntryActivity extends AppCompatActivity {
             boolean isInserted = dbHelper.insertData(activities, diaryEntry, mood);
             if (isInserted) {
                 Toast.makeText(DiaryEntryActivity.this, "Entry Saved!", Toast.LENGTH_SHORT).show();
+                activitiesInput.setText("");
+                diaryEntryInput.setText("");
+                moodSpinner.setSelection(0);
             } else {
                 Toast.makeText(DiaryEntryActivity.this, "Error Saving Entry!", Toast.LENGTH_SHORT).show();
             }

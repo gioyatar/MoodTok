@@ -3,6 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- Luna -->
+    <color name="ligghpink">#FDEACB</color>
+    <color name="dogbrown">#9a6b6b</color>
+
     <!-- Devil Hunter Colors Theme -->
     <color name="bloodRed">#8B0000</color>
     <color name="obsidianBlack">#1A1A1A</color>
