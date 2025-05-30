@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class AboutActivity extends AppCompatActivity {
     private ImageView todoImageView;
     private ImageView diaryImageView;
+    private ImageView dashboardImageView;
     private ImageView foxImageView;
     //private CalendarComponent calendarComponent; // Assuming CalendarComponent exists
 
@@ -29,6 +30,8 @@ public class AboutActivity extends AppCompatActivity {
 
         todoImageView = findViewById(R.id.todo);
         diaryImageView = findViewById(R.id.diary);
+        dashboardImageView = findViewById(R.id.dashboard);
+
         // Initialize CalendarComponent with appropriate views if needed
         // calendarComponent = new CalendarComponent(monthYearText, prevMonthBtn, nextMonthBtn, calendarGrid);
 
@@ -47,6 +50,12 @@ public class AboutActivity extends AppCompatActivity {
         if (diaryImageView != null) {
             diaryImageView.setOnClickListener(v -> {
                 Intent intent = new Intent(AboutActivity.this, DiaryActivity.class);
+                startActivity(intent);
+            });
+        }
+        if (dashboardImageView != null) {
+            dashboardImageView.setOnClickListener(v -> {
+                Intent intent = new Intent(AboutActivity.this, MainActivity.class);
                 startActivity(intent);
             });
         }

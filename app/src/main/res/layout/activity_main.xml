@@ -148,9 +148,11 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:id="@+id/about"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:src="@drawable/account_logo" />
+
         </LinearLayout>
 
     </LinearLayout>
