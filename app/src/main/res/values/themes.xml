@@ -1,13 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Devil Hunter Theme -->
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MoodTok" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Themes -->
     <style name="Theme.AppCompat.Luna" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="backgroundColor">@color/dogbrown</item>
         <item name="textFillColor">@color/black</item>
-        <item name="android:fontFamily">@font/sans-serif-black</item>
+        <item name="android:fontFamily">sans-serif</item>
         <item name="colorPrimary">@color/ligghpink</item>
     </style>
 
-    <!-- Devil Hunter Theme -->
     <style name="Theme.AppCompat.DevilHunter" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="backgroundColor">@color/bloodRed</item>
         <item name="textFillColor">@color/ashWhite</item>
@@ -15,7 +20,6 @@
         <item name="colorPrimary">@color/obsidianBlack</item>
     </style>
 
-    <!-- Dark Slayer Theme -->
     <style name="Theme.AppCompat.DarkSlayer" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="backgroundColor">@color/deepMidnightBlue</item>
         <item name="textFillColor">@color/platinumGray</item>
@@ -25,10 +29,4 @@
 
     <!-- Set the Default Theme to Devil Hunter -->
     <style name="Theme.MoodTok" parent="Theme.AppCompat.Luna" />
-
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MoodTok" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
 </resources>

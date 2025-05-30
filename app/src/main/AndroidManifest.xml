@@ -22,11 +22,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Calendar -->
-        <activity
-            android:name=".CalendarComponent"
-            android:exported="false" />
-
         <!-- To Do -->
         <activity
             android:name=".ToDoActivity"
