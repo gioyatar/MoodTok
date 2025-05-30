@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DiaryEntryActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write about your day"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="75dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginBottom="12dp">
+
+        <!-- Mood Icon -->
+        <ImageView
+            android:id="@+id/diary_mood_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/neutral"
+            android:contentDescription="Mood Icon"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="start"/>
+
+        <!-- Date, Mood, and Time Info -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Question -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="how are you today?"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Mood Selection -->
+            <Spinner
+                android:id="@+id/mood_spinner"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Activities Selection -->
+    <EditText
+        android:id="@+id/listed_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Activities (Separated by commas)"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Diary Entry -->
+    <EditText
+        android:id="@+id/diary_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your diary entry..."
+        android:textSize="16sp"
+        android:minLines="4"
+        android:gravity="top"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Entry"
+        android:textSize="18sp"
+        android:backgroundTint="@color/black"/>
+</LinearLayout>

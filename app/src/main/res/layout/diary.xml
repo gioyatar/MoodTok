@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diaryLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".DiaryActivity">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btnDeleteImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Delete Image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Previous Month"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/textMonthYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 2025"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnForward"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@android:drawable/ic_media_next"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Next Month"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/addIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add"
+            android:contentDescription="Add Diary Entry"
+            android:layout_gravity="end"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Diary Entries -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/diaryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        tools:listitem="@layout/diaryitem" />
+
+    <!-- Bottom Nav Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#1A1A1A"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center">
+
+        <!-- Dashboard -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/dashboard_logo" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Dashboard"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Diary -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/diary"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/diary_logo" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Diary"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- To-Do -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/todo"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/assignment_logo" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="To-Do"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- About -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/about"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/account_logo" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="About"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

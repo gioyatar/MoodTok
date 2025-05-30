@@ -7,19 +7,21 @@ import android.view.Gravity;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
 import androidx.core.content.res.ResourcesCompat;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class CalendarActivity {
+public class CalendarComponent {
 
     private final TextView monthYearText;
     private final ImageButton prevMonthBtn, nextMonthBtn;
     private final GridLayout calendarGrid;
     private final Calendar currentCalendar;
 
-    public CalendarActivity(TextView monthYearText, ImageButton prevMonthBtn, ImageButton nextMonthBtn, GridLayout calendarGrid) {
+    public CalendarComponent(TextView monthYearText, ImageButton prevMonthBtn, ImageButton nextMonthBtn, GridLayout calendarGrid) {
         this.monthYearText = monthYearText;
         this.prevMonthBtn = prevMonthBtn;
         this.nextMonthBtn = nextMonthBtn;
@@ -62,7 +64,6 @@ public class CalendarActivity {
         int totalCells = 42;
         int day = 1;
 
-        // **Start here: Resolve the fontFamily attribute once**
         TypedValue typedValue = new TypedValue();
         boolean found = calendarGrid.getContext().getTheme().resolveAttribute(android.R.attr.fontFamily, typedValue, true);
 
@@ -73,9 +74,7 @@ public class CalendarActivity {
                 customFont = ResourcesCompat.getFont(calendarGrid.getContext(), fontResId);
             }
         }
-        // **End font resolving**
 
-        // Then the loop creating the day cells
         for (int i = 0; i < totalCells; i++) {
             TextView dayCell = new TextView(calendarGrid.getContext());
             dayCell.setGravity(Gravity.CENTER);

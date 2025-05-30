@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ToDoPageActivity"
+    android:background="@drawable/paper">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Edit Task"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Task Title -->
+
+    <!-- Deadline Picker -->
+
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/container2"
+        android:fontFamily="sans-serif-black"
+        android:hint="   Task Title"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="381dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/container2"
+        android:fontFamily="sans-serif-black"
+        android:gravity="top"
+        android:hint="   Task Description"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:textAlignment="textStart" />
+
+    <EditText
+        android:id="@+id/editTextDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/container2"
+        android:clickable="true"
+        android:focusable="false"
+        android:fontFamily="sans-serif-black"
+        android:hint="  Select Deadline"
+        android:inputType="none" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Save Task"
+        android:backgroundTint="#3A2D2D" />
+
+</LinearLayout>
