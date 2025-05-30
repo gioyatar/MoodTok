@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     private CalendarComponent calendarComponent;
     private ImageView todoImageView;
+    private ImageView diaryImageView;
+    private ImageView aboutImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         GridLayout calendarGrid = findViewById(R.id.calendarGrid);
 
         todoImageView = findViewById(R.id.todo);
+        diaryImageView = findViewById(R.id.diary);
+        aboutImageView = findViewById(R.id.about);
 
         calendarComponent = new CalendarComponent(monthYearText, prevMonthBtn, nextMonthBtn, calendarGrid);
         if (todoImageView != null) {
@@ -34,6 +38,19 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ToDoActivity.class);
                 startActivity(intent);
             });
+        } else if (diaryImageView != null) {
+            diaryImageView.setOnClickListener(v -> { // Corrected: removed 'View' type for lambda parameter
+                Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
+                startActivity(intent);
+            });
         }
-    }
-}
+
+        /*
+        else if (aboutImageView !=null) {
+            aboutImageView.setOnClickListener(v -> {
+                Intent intent = new Intent(MainActivity.this, .class);
+                startActivity(intent);
+            });
+        } */
+    } // Closes onCreate method
+} // Closes MainActivity classpackage com.example.moodtok;
