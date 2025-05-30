@@ -8,7 +8,7 @@
 
     <!-- Themes -->
     <string-array name="themes_list">
-        <<item>Default</item>
+        <item>Default</item>
         <item>Dark Slayer</item>
         <item>Devil Hunter</item>
         <item>Luna</item>
