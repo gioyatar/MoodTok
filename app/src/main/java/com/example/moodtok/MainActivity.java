@@ -15,9 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private CalendarComponent calendarComponent;
     private ImageView todoImageView;
-    private ImageView diaryImageView;
-    private ImageView aboutImageView;
-
+    private ImageView diaryImageView;;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,27 +28,34 @@ public class MainActivity extends AppCompatActivity {
 
         todoImageView = findViewById(R.id.todo);
         diaryImageView = findViewById(R.id.diary);
-        aboutImageView = findViewById(R.id.about);
 
         calendarComponent = new CalendarComponent(monthYearText, prevMonthBtn, nextMonthBtn, calendarGrid);
+        findViewById(R.id.mood1).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.better));
+
+        findViewById(R.id.mood2).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.happy));
+
+        findViewById(R.id.mood3).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.neutral));
+
+        findViewById(R.id.mood4).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.awful));
+
+        findViewById(R.id.mood5).setOnClickListener(v ->
+                calendarComponent.setSelectedMood(R.drawable.sad));
+
         if (todoImageView != null) {
             todoImageView.setOnClickListener(v -> {
                 Intent intent = new Intent(MainActivity.this, ToDoActivity.class);
                 startActivity(intent);
             });
-        } else if (diaryImageView != null) {
-            diaryImageView.setOnClickListener(v -> { // Corrected: removed 'View' type for lambda parameter
+        }
+        if (diaryImageView != null) {
+            diaryImageView.setOnClickListener(v -> {
                 Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
                 startActivity(intent);
             });
         }
-
-        /*
-        else if (aboutImageView !=null) {
-            aboutImageView.setOnClickListener(v -> {
-                Intent intent = new Intent(MainActivity.this, .class);
-                startActivity(intent);
-            });
-        } */
-    } // Closes onCreate method
-} // Closes MainActivity classpackage com.example.moodtok;
+    }
+}
