@@ -56,7 +56,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/better" />
+                android:src="@drawable/mood1" />
 
             <ImageButton
                 android:id="@+id/mood2"
@@ -66,7 +66,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 2"
                 android:scaleType="fitCenter"
-                android:src="@drawable/happy" />
+                android:src="@drawable/mood2" />
 
             <ImageButton
                 android:id="@+id/mood3"
@@ -76,7 +76,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 3"
                 android:scaleType="fitCenter"
-                android:src="@drawable/neutral" />
+                android:src="@drawable/mood3" />
 
             <ImageButton
                 android:id="@+id/mood4"
@@ -86,7 +86,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 4"
                 android:scaleType="fitCenter"
-                android:src="@drawable/awful" />
+                android:src="@drawable/mood4" />
 
             <ImageButton
                 android:id="@+id/mood5"
@@ -96,7 +96,7 @@
                 android:background="@null"
                 android:contentDescription="Mood 5"
                 android:scaleType="fitCenter"
-                android:src="@drawable/sad" />
+                android:src="@drawable/mood5" />
         </LinearLayout>
     </LinearLayout>
 

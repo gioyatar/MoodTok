@@ -30,22 +30,37 @@ public class MainActivity extends AppCompatActivity {
         todoImageView = findViewById(R.id.todo);
         diaryImageView = findViewById(R.id.diary);
         aboutImageView = findViewById(R.id.about);
+         = findViewById(R.id.setting)
 
         calendarComponent = new CalendarComponent(monthYearText, prevMonthBtn, nextMonthBtn, calendarGrid);
         findViewById(R.id.mood1).setOnClickListener(v ->
-                calendarComponent.setSelectedMood(R.drawable.better));
+                calendarComponent.setSelectedMood(R.drawable.mood1));
 
         findViewById(R.id.mood2).setOnClickListener(v ->
-                calendarComponent.setSelectedMood(R.drawable.happy));
+                calendarComponent.setSelectedMood(R.drawable.mood2));
 
         findViewById(R.id.mood3).setOnClickListener(v ->
-                calendarComponent.setSelectedMood(R.drawable.neutral));
+                calendarComponent.setSelectedMood(R.drawable.mood3));
 
         findViewById(R.id.mood4).setOnClickListener(v ->
-                calendarComponent.setSelectedMood(R.drawable.awful));
+                calendarComponent.setSelectedMood(R.drawable.mood4));
 
         findViewById(R.id.mood5).setOnClickListener(v ->
-                calendarComponent.setSelectedMood(R.drawable.sad));
+                calendarComponent.setSelectedMood(R.drawable.mood5));
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ImageButton myImageButton = findViewById(R.id.setting);
+
+        myImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         if (todoImageView != null) {
             todoImageView.setOnClickListener(v -> {
