@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity"
-    android:background="@drawable/check">
+    android:background="?attr/backgroundColor">
 
     <!-- Title and Add Button -->
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="?attr/fontFamily"
             android:text="To-Do List"
             android:textColorLink="#C7AFAF"
             android:textSize="20sp"

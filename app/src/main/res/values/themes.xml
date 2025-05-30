@@ -1,5 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Devil Hunter Theme -->
+    <style name="Theme.AppCompat.Luna" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="backgroundColor">@color/dogbrown</item>
+        <item name="textFillColor">@color/black</item>
+        <item name="android:fontFamily">@font/sans-serif-black</item>
+        <item name="colorPrimary">@color/ligghpink</item>
+    </style>
+
+    <!-- Devil Hunter Theme -->
     <style name="Theme.AppCompat.DevilHunter" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="backgroundColor">@color/bloodRed</item>
         <item name="textFillColor">@color/ashWhite</item>
@@ -16,7 +24,7 @@
     </style>
 
     <!-- Set the Default Theme to Devil Hunter -->
-    <style name="Theme.MoodTok" parent="Theme.AppCompat.DarkSlayer" />
+    <style name="Theme.MoodTok" parent="Theme.AppCompat.Luna" />
 
     <!-- Base application theme. -->
     <style name="Base.Theme.MoodTok" parent="Theme.Material3.DayNight.NoActionBar">

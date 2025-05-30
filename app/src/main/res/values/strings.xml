@@ -8,11 +8,11 @@
 
     <!-- Themes -->
     <string-array name="themes_list">
-        <item>Default</item>
-        <item>Dark Slayer</item>
-        <item>Devil Hunter</item>
         <item>Luna</item>
+        <item>Devil Hunter</item>
+        <item>Dark Slayer</item>
     </string-array>
+
 
     <!-- Moods -->
     <string-array name="mood_spinner">
