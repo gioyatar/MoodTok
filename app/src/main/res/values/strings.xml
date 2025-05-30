@@ -6,6 +6,15 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!-- Themes -->
+    <string-array name="themes_list">
+        <item>Default</item>
+        <item>Dark Slayer</item>
+        <item>Devil Hunter</item>
+        <item>Luna</item>
+    </string-array>
+
+    <!-- Moods -->
     <string-array name="mood_spinner">
         <item>Great</item>
         <item>Good</item>
